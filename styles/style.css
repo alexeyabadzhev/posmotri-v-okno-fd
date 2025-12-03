@@ -8,25 +8,11 @@ html {
   block-size: 100%;
 }
 
-.page,
-.button,
-.search-form__fieldset-title,
-.search-form__label-text,
-.content__video-card-description,
-.search-form__textfield {
+.page {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-}
-
-.title,
-.content__video-card-title {
-  font-family: Oswald, sans-serif;
-  font-weight: 700;
-}
-
-.page {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -80,15 +66,14 @@ ol {
 }
 
 .button {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   font-weight: 700;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.button,
-.search-form__label,
-.content__video-card {
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -138,12 +123,24 @@ ol {
 }
 
 .search-form__fieldset-title {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__textfield {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   border-left: transparent;
   border-right: transparent;
   appearance: none;
@@ -165,6 +162,14 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .search-form__label:has(:focus-visible),
@@ -200,10 +205,12 @@ ol {
 .search-form__submit-button {
   align-self: self-end;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
   font-size: 75px;
   line-height: 0.94em;
   text-transform: uppercase;
@@ -267,18 +274,25 @@ ol {
 }
 
 .content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 1em;
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 196px;
 }
 
 .content__video-card-description {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 0.9em;
   overflow: hidden;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   margin-top: 6px;
@@ -287,6 +301,7 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .content__video-card-thumbnail {
