@@ -108,6 +108,7 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   gap: 30px;
   width: 100%;
 }
@@ -219,6 +220,7 @@ ol {
   justify-content: stretch;
   align-items: stretch;
   gap: 26px;
+  width: 399px;
 }
 
 .content__list-container {
