@@ -306,7 +306,7 @@ ol {
 
 .content__video-card-thumbnail {
   height: 103px;
-  max-width: 194px;
+  width: 194px;
   object-fit: cover;
   object-position: center;
 }
